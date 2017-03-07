@@ -1,0 +1,92 @@
+/**{
+  background-color: silver;
+}*/
+
+.messages {
+  outline: 1px solid black;
+  height: 400px;
+  max-height: 400px;
+  width: 95%;
+  padding: 0;
+  overflow: auto;
+}
+  .messages ul{
+    list-style-type: none !important;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+
+.input-top {
+  padding: 0;
+  width: 85%;
+}
+  .input-top input{
+    width: 55%;
+    margin-top: 10px;
+  }
+
+.canvas-area, .live-chat{
+  margin-left: 3%;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+  /*width: 45%;*/
+}
+
+.canvas-area{
+  outline: 1px solid black;
+  text-align: center;
+  width: 60%;
+  height: 450px;
+  margin-bottom: 15px;
+}
+
+.live-chat{
+  margin-left: 10px;
+  width: 35%;
+}
+
+
+#whiteBoard {
+  outline: 5px solid lightblue;
+  margin-left: 20px;
+  /*height: 300px;*/
+  /*width: 300px;*/
+}
+
+.bottom{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.live-code, .static-code{
+  /*outline: 1px solid green;*/
+  display: inline-block;
+  vertical-align: top;
+  height: 400px;
+}
+
+.static-code{
+  width: 47%;
+  margin-left: 2%;
+  overflow: scroll;
+}
+
+.live-code{
+  width: 47%;
+  margin-left: 2%;
+}
+
+.code{
+  outline: 2px solid grey;
+  vertical-align: top;
+  display: inline-block;
+  margin: auto;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  height: 85%;
+  width: 30%;
+
+}

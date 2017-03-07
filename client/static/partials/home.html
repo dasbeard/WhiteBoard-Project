@@ -1,0 +1,70 @@
+
+
+
+
+<div class="nav">
+  <button ng-click="clearWhiteboard()">Clear Canvas</button>
+  <button ng-click="logout()">Log Out</button>
+</div> <!-- End Nav -->
+
+
+
+<div class="canvas-area">
+<p>Canvas</p>
+
+<canvas id="whiteBoard" width=750px height=350px></canvas>
+
+</div>
+
+
+<div class="live-chat">
+<!-- CHAT -->
+
+      <div id="mess" class="messages" >
+        <ul>
+          <li ng-repeat="m in messages" class="message-content">{{m._user.name}}: {{m.content}} </li>
+
+        </ul>
+      </div>
+
+<!-- Text Input -->
+      <div class="input-top">
+        <form ng-submit="submitNewMessage()">
+          <label>Enter Message:
+            <input type="text" ng-model="newMessage.content">
+          </label>
+          <button>Submit</button>
+        </form>
+      </div>
+</div>
+
+
+<div class="bottom">
+
+
+
+<div class="static-code">
+  <p>Static Code</p>
+
+  <div ng-repeat='c in staticCode'
+  class="code">
+    <p>{{c.code}}</p>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="live-code">
+
+    <a ui-sref=".main">Live Code View</a>
+    <a ui-sref=".otherStuff">Live Code Input</a>
+
+    <div ui-view></div> <!-- Where the sub partials show -->
+</div>
+
+</div>
+
+<!-- <script type="text/javascript" src='js/canvas.js'></script> -->
